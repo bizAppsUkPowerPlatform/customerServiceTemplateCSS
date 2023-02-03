@@ -1,0 +1,152 @@
+/*******************************/
+/* Change these values */
+
+:root {
+    --nav-color: #000000;
+    --primary-color: #000000;
+    --secondary-color: #000000;
+    --font-family: 'Segoe UI', Helvetica, sans-serif;
+    --heading-align: left;
+}
+
+/*******************************/
+
+/* What the values do:
+
+  --nav-color: Colour of the top navigation bar 
+  --primary-color:  Primary colour of the site, used for links and section overlays
+  --secondary-color: Secondary colour, used for lines and some hover effects on buttons
+  --font-family: Font of the site 
+  --heading-align: Make the top banner on the homepage left or right justified
+*/
+
+/* Text */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a, ul, li, ol {
+    font-family: var(--font-family)!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold!important;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover, a:focus {
+    color:  var(--primary-color);
+    opacity: 0.8;
+}
+
+/* Navigation bar */
+
+.navbar.navbar-static-top.navbar-inverse {
+    background-color: var(--nav-color)!important;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    border-bottom: 4px solid var(--secondary-color)!important;
+}
+
+/* Homepage banner */
+
+.section-landing {
+    min-height: 388px!important;
+    text-align: var(--heading-align);
+}
+
+.section-landing-heading {
+    font-family: var(--font-family)!important;
+}
+
+.section-landing .row > div .section-landing-sub-heading {
+    letter-spacing: 0!important;
+    text-transform: unset!important;
+    font-size: 2.3rem!important;
+}
+
+.section-landing .form-search {
+    width: 30em!important;
+    float: var(--heading-align);
+}
+
+.section-landing .form-search ul {
+    padding-left: 0!important;
+}
+
+.layer_down, .layer_up {
+    display: none!important;
+}
+
+/* Main content */
+
+.blue_border {
+    border-color: var(--secondary-color)!important;
+}
+
+.sidebar-home {
+    border-color: var(--secondary-color)!important;
+}
+
+.sidebar-home a {
+    color: var(--primary-color)!important;
+}
+
+.content-home p {
+    border-top: none!important;
+}
+
+.content-home .list-group-item a.title {
+    font-family: var(--font-family)!important;
+    color: var(--primary-color)!important;
+}
+
+.page_section h3 {
+    font-family: var(--font-family)!important;
+}
+
+#mainContent .list-group-item a {
+    color: var(--primary-color)!important;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+    background-color: var(--primary-color)!important;
+}
+
+/* Buttons */
+
+.btn-default {
+    color: var(--primary-color)!important;
+    border-color: var(--primary-color)!important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color)!important;
+    border-color: var(--primary-color)!important;
+}
+
+/* Forums and Get Help section */
+
+.section-sub-landing {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--primary-color)), url(homethumbnail1.jpg) no-repeat center!important;
+    background-size: cover!important;
+}
+
+.section-diagonal-right {
+    -webkit-transform: skew(0deg, 0deg)!important;
+    -ms-transform: skew(0deg, 0deg)!important;
+    transform: skew(0deg, 0deg)!important;
+}
+
+.section-diagonal-right .section-diagonal-right-content {
+    -webkit-transform: skew(0deg, 0deg)!important;
+    -ms-transform: skew(0deg, 0deg)!important;
+    transform: skew(0deg, 0deg)!important;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--primary-color)), url(homethumbnail4.jpg) no-repeat!important;
+    background-size: cover!important;
+}
+
+.section-diagonal-right .section-diagonal-right-content:before {
+    background-color: transparent!important;
+}
